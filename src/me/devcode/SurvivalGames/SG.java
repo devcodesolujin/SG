@@ -154,7 +154,7 @@ public class SG extends JavaPlugin{
 	
 	public void loadMySQL() {
 		
-		mysql = new MySQL("mysql.mc-host24.de", "db_19926", "db_19926", "7610cd0267");
+		mysql = new MySQL("localhost", "db_19926", "db_19926", "7610cd0267");
 		mysql.update("CREATE TABLE IF NOT EXISTS Stats(UUID varchar(64), KILLS int, DEATHS int, VERBOT varchar(64), VERBOTUUID varchar(64));");
 	}
 
