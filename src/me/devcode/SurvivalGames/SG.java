@@ -90,8 +90,11 @@ public class SG extends JavaPlugin{
 		getConfig().options().copyDefaults(true);
 		saveConfig();
 		logger.info("[Signs] Die Schilder werden in 1,5 Sekunden geladen...");
-		Bukkit.getScheduler().runTaskLater(this, new BukkitRunnable() {
+		/*Bukkit.getScheduler().runTaskLater(this, new BukkitRunnable() {
 			
+			 * Does not work.
+			 * Srsly it doesn't work.
+			 
 			@Override
 			public void run() {
 				// TODO Auto-generated method stub
@@ -99,7 +102,7 @@ public class SG extends JavaPlugin{
 				Ranking.setRankingSigns();
 			}
 		}, 30L);
-		
+		*/
 		
 	}
 	
